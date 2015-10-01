@@ -36,6 +36,7 @@ RUN set -ex \
 	done
 
 COPY config/logging.yml /usr/share/elasticsearch/config/
+COPY config/elasticsearch.yml /usr/share/elasticsearch/config/
 
 VOLUME /usr/share/elasticsearch/data
 
